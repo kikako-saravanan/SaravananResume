@@ -1,146 +1,150 @@
-
-*{
-  box-sizing:border-box;
-  font-family: 'Seoge UI',Tahoma,geneva,verdana,sans-serif;
+* {
+  box-sizing: border-box;
+  font-family: "Seoge UI", Tahoma, geneva, verdana, sans-serif;
 }
 
-body{
-  background-color: #C8D9EB;
+body {
+  background-color: #c8d9eb;
+  isolation: isolate;
 }
 
-.main-content{
-  display:grid;
+.main-content {
+  display: grid;
   grid-template-columns: 300px 700px;
-  min-height:1000px;
-  width:90%;
-  margin:20px auto;
-  justify-content:center;
-
+  min-height: 1000px;
+  width: 90%;
+  margin: 20px auto;
+  justify-content: center;
 }
 
-.left-section{
-grid-column:span 1;
-background-color: #D77FA1;
-
+.left-section {
+  grid-column: span 1;
+  background-color: #d77fa1;
+  isolation: isolate;
 }
 
-.right-section{
-grid-column: span 1/span 2;
-background-color: #BAABDA;
+.right-section {
+  grid-column: span 1 / span 2;
+  background-color: #baabda;
+  isolation: isolate;
 }
 
-.left-content{
+.left-content {
   padding: 1rem;
 }
-.profile-image{
-  margin:auto;
-  display:block;
-  width:60%;
+.profile-image {
+  margin: auto;
+  display: block;
+  width: 60%;
   border-radius: 30%;
-  border:5px solid white;
+  border: 5px solid white;
+  isolation: isolate;
 }
-.name{
+.name {
   font-size: 1.2rem;
-  font-weight:700;
-  text-align:center;
+  font-weight: 700;
+  text-align: center;
   text-transform: uppercase;
   letter-spacing: 0.02px;
   padding: 0.8rem;
-  color:#FEECE9;
+  color: #feece9;
+  isolation: isolate;
 }
-.designation{
-font-size: 1rem;
-text-align:center;
-text-transform: uppercase;
-padding-bottom: 0.5rem;
-color: #D6E5FA;
+.designation {
+  font-size: 1rem;
+  text-align: center;
+  text-transform: uppercase;
+  padding-bottom: 0.5rem;
+  color: #d6e5fa;
+  isolation: isolate;
 }
-.description{
+.description {
   font-size: 0.75rem;
-  text-align:center;
+  text-align: center;
   padding: 1rem;
-  color:#FFF9F9;
+  color: #fff9f9;
+  isolation: isolate;
 }
-a{
-    line-height: 0.2em;
-    display: inline-block;
-    text-decoration: none;
-    padding: 10px;
-    margin: 2px;
-    color:#FBCAFF;
+a {
+  line-height: 0.2em;
+  display: inline-block;
+  text-decoration: none;
+  padding: 10px;
+  margin: 2px;
+  color: #fbcaff;
+  isolation: isolate;
 }
-.skills{
+.skills {
   font-size: 0.75rem;
-  text-align:center;
+  text-align: center;
   text-transform: uppercase;
   padding-top: 1rem;
   padding-bottom: 1rem;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
-  color:#FEECE9;
+  color: #feece9;
+  isolation: isolate;
 }
-.skill-name{
+.skill-name {
   font-size: 0.65rem;
-  font-weight:0.65rem;
+  font-weight: 0.65rem;
   text-align: left;
   padding-bottom: 0.5rem;
-  color: #D6E5FA;
+  color: #d6e5fa;
+  isolation: isolate;
 }
-.progress-bar{
+.progress-bar {
   border: 1px white solid;
-  height:4px;
-background: #FEECE9;
-border-radius: 16px;
+  height: 4px;
+  background: #feece9;
+  border-radius: 16px;
+  isolation: isolate;
 }
 
-
-.right-main-content{
+.right-main-content {
   padding-top: 2rem;
   padding-bottom: 2rem;
   padding-left: 3rem;
   padding-right: 3rem;
 }
 
-.right-title{
+.right-title {
   text-transform: uppercase;
   font-size: 1.2rem;
   font-weight: 700;
   padding: 0.5rem;
   letter-spacing: 1px;
-  color: #B762C1;
+  color: #b762c1;
+  isolation: isolate;
 }
 
-.para{
+.para {
   font-size: 1rem;
   padding: 0.5rem;
   letter-spacing: 1px;
-  color:#072227;
-
+  color: #072227;
 }
-.experience-content{
+.experience-content {
   font-size: 1rem;
   letter-spacing: 1px;
-  margin-left:auto;
-  margin-right:auto;
-
+  margin-left: auto;
+  margin-right: auto;
 }
-.intern{
+.intern {
   font-size: 1rem;
   letter-spacing: 1px;
-  margin-left:auto;
-  margin-right:auto;
-
+  margin-left: auto;
+  margin-right: auto;
 }
-.education{
+.education {
   font-size: 1rem;
   letter-spacing: 1px;
-  margin-left:auto;
-  margin-right:auto;
-
+  margin-left: auto;
+  margin-right: auto;
 }
-table{
-  color:#072227;
-border-spacing: 20px;
+table {
+  color: #072227;
+  border-spacing: 20px;
 }
 .full-form .tooltiptext {
   visibility: hidden;
@@ -160,21 +164,20 @@ border-spacing: 20px;
   visibility: visible;
 }
 
-@media screen and (max-width: 630px){
-  .main-content{
-    grid-template-columns: repeat(1,1fr);
-
+@media screen and (max-width: 630px) {
+  .main-content {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 
-@media all and (max-width: 673px){
-  .main-content{
-    grid-template-columns: repeat(1,1fr);
-grid-column: span 1;
+@media all and (max-width: 673px) {
+  .main-content {
+    grid-template-columns: repeat(1, 1fr);
+    grid-column: span 1;
   }
 }
 
-.s{
+.s {
   position: relative;
-top: 5.3px;
+  top: 5.3px;
 }
