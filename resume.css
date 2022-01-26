@@ -5,12 +5,17 @@
   box-sizing:border-box;
   font-family: 'Seoge UI',Tahoma,geneva,verdana,sans-serif;
 }
+body{
+  background-color: #C8D9EB;
+}
+
 .main-content{
   display:grid;
   grid-template-columns: 300px 700px;
   min-height:1000px;
   width:90%;
   margin:20px auto;
+  justify-content:center;
 
 }
 
